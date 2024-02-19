@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1011</width>
+    <height>783</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1011</width>
+    <height>783</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ElKit</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Справочник</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>331</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Требования к комплектации аптечек:</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="RequiredTable">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>130</y>
+          <width>863</width>
+          <height>360</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Отчет</string>
+       </attribute>
+       <widget class="QLabel" name="CurrentDateLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>351</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="ReportTable1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>139</y>
+          <width>501</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="ReportTable2">
+        <property name="geometry">
+         <rect>
+          <x>598</x>
+          <y>139</y>
+          <width>360</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentDateLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>351</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Недостающие изделия:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentDateLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>100</y>
+          <width>350</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Изделия с истекшим сроком годности:</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="CreateKitButton">
+        <property name="text">
+         <string>Создать аптечку</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DeleteKitButton">
+        <property name="text">
+         <string>Удалить аптечку</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ReportButton">
+      <property name="text">
+       <string>Сформировать отчет</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1011</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
